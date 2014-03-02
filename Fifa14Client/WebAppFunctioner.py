@@ -262,7 +262,6 @@ class WebAppFunctioner(object):
         """Returns desired leaderboard stats for user"""
         userId = self.get_user_id()
         the_url = self.LEADER_URL % (self.platform_string, userId)
-        print the_url
 
         r =  requests.post(the_url,headers=self.get_headers('GET'))
                
